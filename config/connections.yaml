@@ -1,0 +1,14 @@
+database:
+  host: localhost
+  port: 5432
+  database: dwh
+  user: airflow
+  password: ${DB_PASSWORD}
+
+airflow:
+  retries: 3
+  retry_delay: 300
+  
+telegram:
+  bot_token: ${TELEGRAM_BOT_TOKEN}
+  chat_id: ${TELEGRAM_CHAT_ID}
